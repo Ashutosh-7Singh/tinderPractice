@@ -1,14 +1,18 @@
 {
   "name": "devtinder",
   "version": "1.0.0",
-  "description": "tinder for devs",
+  "description": "devtinder for developers",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev":"nodemon src/app.js",
-  "start": "node src/app.js"
+    "start": "node src/app.js"
   },
-  "author": "Ashutos Singh",
+  "keywords": [
+    "javascript",
+    "node"
+  ],
+  "author": "Ashutosh Singh",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.1",

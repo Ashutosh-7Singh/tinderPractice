@@ -1,20 +1,18 @@
 const express = require("express");
 const app = express();
 
-app.get(
-  "/user",(req,res)=>{
-    console.log("Handling the sencond route");
-    res.send("second route handler");
-    
+app.get("/admin/etAllData",(req,res)=>{
+  const token ="xyz";
+  const isAdminAuthorized = token === "xyz";
+  if(isAdminAuthorized){
+    res.send("All data sent")
+  }else{
+    res.status(400).send("Unauthorised Request")
   }
-)
-app.get(
-  "/user",(req,res,next)=>{
-    console.log("Handling the route user 1!!");
-    res.send("first route handler");
-    next()
-  }
-)
+}) 
+
+app.get("/admin/deleteUser",(req,res)=>
+res.send("User delete sucessfully"))
 
 
 app.listen(3002, () => {

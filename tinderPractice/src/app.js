@@ -63,6 +63,7 @@ app.delete("/user", async (req, res) => {
 });
 
 app.patch("/updateUser", async (req, res) => {
+  //  we can also do it by using emailId
   const userId = req.body.userId;
   const data = req.body;
   console.log(data);

@@ -64,11 +64,13 @@ app.delete("/user", async (req, res) => {
 
 app.patch("/updateUser", async (req, res) => {
   const userId = req.body.userId;
-  const user = req.body;
-  console.log(user);
+  const data = req.body;
+  console.log(data);
   
   try {
-    await User.findByIdAndUpdate({ _id: userId }, user);
+    const user= await User.findByIdAndUpdate({ _id: userId }, data,{returnDocument:"after"});
+    console.log(user);
+    
     res.send("User updated sucessfully"+ user);
   } catch (err) {
     res.status(404).send("Some thing went wrong");

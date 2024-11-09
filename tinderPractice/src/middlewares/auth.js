@@ -9,8 +9,6 @@ const adminAuth = (req,res) => {
     res.send("Admin aa gya successfully");
   }
 };
-
-
 module.exports ={
     adminAuth
 }

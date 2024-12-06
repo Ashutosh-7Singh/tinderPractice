@@ -42,5 +42,21 @@ and status is intrested
 
  # Every line Evey code Matter
  # Code never lies
+ # Thought process for POST and GET API's
+
+ <!--How to find Connection Request  -->
+
+ # user/requests/recieved
+ - toUserId = loggedInUser._id
+ -
+ 
+
+ <!-- get all the connection -->
+
+ # -GET /user/connections
+
+ suppose ->user ->Akshay ->Elon ->accepted so status should be accepted
+ Elon - Mark -> accepted
+ means fromUser and touser but the status should be accepted 
 
  

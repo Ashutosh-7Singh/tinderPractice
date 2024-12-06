@@ -32,8 +32,8 @@ connectionRequestRouter
 
 
 userRouter
--GET /user/connection
--GET /user/recieved
+-GET /user/connections
+-GET user/requests/recieved
 -GET /user/feed - Get you the profile of other users on platfrom 
 
 
